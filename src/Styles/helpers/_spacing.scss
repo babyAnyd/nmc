@@ -1,0 +1,17 @@
+:root {
+    @each $spacer, $value in $spacers {
+        --theme-spacers-#{$spacer}: #{$value};
+    }
+}
+
+$custom-spacers: (
+    6: $spacer * 8,
+    7: $spacer * 2,
+    8: $spacer * 4,
+    9: $spacer * 5,
+    10: $spacer * 6,
+);
+
+// maps 
+
+$spacers: map-merge($spacers,$custom-spacers);

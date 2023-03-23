@@ -1,0 +1,22 @@
+export const Images = {
+  sec1x1_pics: require("../images/img-5.png"),
+  sec1x2_pics: require("../images/about.png"),
+  sec1x3_pics: require("../images/event.png"),
+  sec1x9_pics: require("../images/img-9.jpg"),
+  sec1x10_pics: require("../images/img-10.jpg"),
+  sec1x11_pics: require("../images/img-11.jpg"),
+  sec1x12_pics: require("../images/img-12.jpg"),
+  sec1x13_pics: require("../images/img-13.jpg"),
+  sec1x14_pics: require("../images/img-14.jpg"),
+
+  sec2x1_pics: require("../images/img-6.jpg"),
+  sec2x2_pics: require("../images/img-15.jpg"),
+  sec2x3_pics: require("../images/img-16.jpg"),
+  sec2x4_pics: require("../images/img-17.jpg"),
+  sec2x5_pics: require("../images/img-19.jpg"),
+  sec2x6_pics: require("../images/music_img_1.png"),
+  sec2x7_pics: require("../images/music_img_2.png"),
+  sec2x8_pics: require("../images/music_img_3.png"),
+  sec2x9_pics: require("../images/maestro-img-1.png"),
+  sec2x10_pics: require("../images/church-about.png"),
+};

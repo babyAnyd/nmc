@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;;
+}
+.logo {
+    height: 210px;
+    width: 210px;
+    display: block!important;
+    @include for-md-phone {
+        width:100px;
+        height:100px;
+    }
+}
+
+#main_pics {
+    border-radius:$img_radius;
+    width: 100%;
+    max-height: 758px;
+    object-fit:cover;
+    display: block;
+    @include for-md-phone {
+        max-height: 758px;
+    }
+}
+
+.home img {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.home_items {
+    overflow: hidden;
+}
+
+.home_items img {
+    transition:  all .6s ease;
+}
+
+.home_items:hover img {
+    transform: scale(1.1);
+}
+
+.container{
+    max-width: 1800px!important;
+    margin-top: 100px;
+    @include for-md-phone {
+        margin-top: 50px;
+    }
+}
+
+.nav-link {
+    font-family: $nunito;
+    color: $primary_1;
+    font-size: 20px;
+}
+
+
+
+.navbar-expand-md {
+    flex-wrap: wrap!important;
+    background-color: #ffff;
+    @include for-md-phone {
+        flex-wrap: nowrap;
+    }
+   
+}
+
+.container-fluid {
+     @include for-md-phone {
+        position: relative;
+        top: -70px;
+    }
+}
+
+.navbar-nav {
+    background-color: #ffff;
+    
+   
+}
+
+.navbar-nav .nav-item {
+    text-align: right;
+   
+}
+
+.navbar-collapse {
+    transition: all .4s;
+}
+
+
+.photo-heading {
+    margin-top: 50px;
+    @include for-md-phone {
+        margin-top: 20px;
+    }
+}
+
+.photo-title {
+    font-family: $saira_condensed;
+    font-size: 100px;
+    font-weight: 1000;
+    color: $secondary_2; 
+    margin-bottom: 0;
+    @include for-md-phone {
+        font-size: 40px;
+    }
+    @include for-sm-phone {
+        font-size: 25px;
+    }
+}
+
+#photo-joy {
+    font-family: $parisienne;
+    font-size: 80px;
+    color: $primary_2;
+    
+    @include for-md-phone {
+        font-size: 30px;
+    }
+    @include for-sm-phone {
+        font-size: 20px;
+    }
+}
+
+
+#photos_home {
+    max-width: 1300px;
+    margin: auto;
+}
+
+#photos_home .col img {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#photos_home .col {
+    overflow: hidden;
+}
+
+#photos_home .col img {
+    transition: .4s ease-in-out;
+}
+
+#photos_home .col:hover img {
+    transform: scale(1.1);
+}
+
+
+.footer .nmc_keep {
+   line-height: 112px;
+   font-family: $nunito;
+   @include for-md-phone {
+        line-height: 50px;
+        font-size: 20px;
+   }
+}
+
+.footer .nmc_says {
+   line-height: 112px;
+   font-family: $nunito;
+   color: $secondary_3;
+   @include for-md-phone {
+        line-height: 50px;
+        font-size: 20px;
+   }
+}
+
+
+#icons {
+    width: 70px;
+    height: 74px;
+    margin: 0 10px ;
+    @include for-md-phone {
+        width: 40px;
+        height: 40px;        
+    };
+};
