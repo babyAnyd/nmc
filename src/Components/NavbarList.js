@@ -16,8 +16,12 @@ export const NavList = [
     links: "/photos",
   },
   {
-    title: "Member",
-    links: "/member",
+    title: "Listen",
+    links: "/listen",
+  },
+  {
+    title: "Members",
+    links: "/members",
   },
   {
     title: "Contact Us",

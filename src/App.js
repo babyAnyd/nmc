@@ -7,6 +7,9 @@ import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
 import { HeaderMenu } from "./Components/Header";
 import { Photos } from "./Pages/Photos";
+import { Listen } from "./Pages/ListenVideo";
+import { Testimonials } from "./Pages/Testimonials";
+import { Members } from "./Pages/Members";
 import { FooterEnd } from "./Components/Footer";
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/photos" element={<Photos />} />
+          <Route path="/listen" element={<Listen />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/members" element={<Members />} />
         </Routes>
         <FooterEnd />
       </Router>

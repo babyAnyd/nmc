@@ -1,4 +1,5 @@
 export const Images = {
+  //home
   sec1x1_pics: require("../images/img-5.png"),
   sec1x2_pics: require("../images/about.png"),
   sec1x3_pics: require("../images/event.png"),
@@ -8,7 +9,7 @@ export const Images = {
   sec1x12_pics: require("../images/img-12.jpg"),
   sec1x13_pics: require("../images/img-13.jpg"),
   sec1x14_pics: require("../images/img-14.jpg"),
-
+  //about
   sec2x1_pics: require("../images/img-6.jpg"),
   sec2x2_pics: require("../images/img-15.jpg"),
   sec2x3_pics: require("../images/img-16.jpg"),
@@ -19,7 +20,7 @@ export const Images = {
   sec2x8_pics: require("../images/music_img_3.png"),
   sec2x9_pics: require("../images/maestro-img-1.png"),
   sec2x10_pics: require("../images/church-about.png"),
-
+  //photos
   photo1x1_pics: require("../images/photo-1.png"),
   photo1x2_pics: require("../images/photo-2.png"),
   photo1x3_pics: require("../images/photo-3.png"),
@@ -27,4 +28,17 @@ export const Images = {
   photo1x5_pics: require("../images/photo-5.png"),
   photo1x6_pics: require("../images/photo-6.png"),
   photo1x7_pics: require("../images/photo-7.png"),
+  //testimonials
+  testimonial1x1_pics: require("../images/testi-img-1.jpg"),
+  testimonial1x2_pics: require("../images/testi-img-2.jpg"),
+  testimonial1x3_pics: require("../images/testi-img-3.jpg"),
+  testimonial1x4_pics: require("../images/testi-img-4.jpg"),
+  testimonial1x5_pics: require("../images/testi-img-5.jpg"),
+  testimonial1x6_pics: require("../images/testi-img-6.jpg"),
+  testimonial1x7_pics: require("../images/testi-img-7.jpg"),
+  testimonial1x8_pics: require("../images/testi-img-8.jpg"),
+  testimonial1x9_pics: require("../images/testi-img-9.jpg"),
+  //members
+  members1x1_pics: require("../images/member-1.png"),
+  members1x2_pics: require("../images/member-2.png"),
 };

@@ -46,14 +46,14 @@ export const Photos = () => {
         <div className="col-lg-6">
           <img
             className="img-fluid photos-item "
-            src={Images.photo1x6_pics}
+            src={Images.photo1x1_pics}
             alt="photo1x6_pics"
           />
         </div>
         <div className="col-lg-6">
           <img
             className="img-fluid photos-item "
-            src={Images.photo1x7_pics}
+            src={Images.photo1x2_pics}
             alt="photo1x7_pics"
           />
         </div>

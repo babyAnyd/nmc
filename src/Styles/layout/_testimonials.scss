@@ -1,0 +1,50 @@
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 12px 2px;
+    object-fit: cover;
+}
+
+#testimonial-items {
+    max-width: 1300px;
+    margin: auto!important;
+    
+}
+.testimonials {
+    background-color: $secondary_1;
+    cursor: pointer;
+}
+
+.prof-caption {
+    font-family: $nunito;
+}
+
+.prof-caption h4 {
+    font-size: 25px;
+}
+
+.prof-caption h5 {
+    font-size: 20px;
+}
+
+.prof-caption p {
+    line-height: 30px;
+    @include for-md-phone {
+        line-height: 23px;
+    }
+}
+
+#testimonial-list {
+    transition: all;
+}
+
+.testimonials:hover {
+    transform: scale(1.1);
+    transition: .6s;
+}
+
