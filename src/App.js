@@ -6,6 +6,7 @@ import "./App.css";
 import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
 import { HeaderMenu } from "./Components/Header";
+import { Photos } from "./Pages/Photos";
 import { FooterEnd } from "./Components/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/photos" element={<Photos />} />
         </Routes>
         <FooterEnd />
       </Router>

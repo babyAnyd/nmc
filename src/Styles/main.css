@@ -373,6 +373,12 @@
   max-width: 100%;
 }
 
+@media (max-width: 462px) {
+  .photos-item {
+    padding: 0 20px;
+  }
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

@@ -19,4 +19,12 @@ export const Images = {
   sec2x8_pics: require("../images/music_img_3.png"),
   sec2x9_pics: require("../images/maestro-img-1.png"),
   sec2x10_pics: require("../images/church-about.png"),
+
+  photo1x1_pics: require("../images/photo-1.png"),
+  photo1x2_pics: require("../images/photo-2.png"),
+  photo1x3_pics: require("../images/photo-3.png"),
+  photo1x4_pics: require("../images/photo-4.png"),
+  photo1x5_pics: require("../images/photo-5.png"),
+  photo1x6_pics: require("../images/photo-6.png"),
+  photo1x7_pics: require("../images/photo-7.png"),
 };
