@@ -43,9 +43,17 @@
 .container{
     max-width: 1800px!important;
     margin-top: 100px;
-    @include for-md-phone {
-        margin-top: 50px;
+    @include for-lg-max-desktop {
+        margin-top: 100px;
     }
+
+    // @include for-md-phone {
+    //     margin-top: 270px;
+    // }
+    
+    // @include for-sm-phone {
+    //     margin-top: 250px;
+    // }
 }
 
 .nav-link {
@@ -54,16 +62,26 @@
     font-size: 20px;
 }
 
+// #nav-main {
+//    position: fixed;
+//    top: 0;
+//    width: 100%;
+//    overflow: hidden;
+//    height: auto;
+//    background-color: #ffffff;
+//    @include for-lg-min-desktop {
+//         position: static;
+//    }
+// }
 
-
-.navbar-expand-md {
+.navbar {
     flex-wrap: wrap!important;
-    background-color: #ffff;
+    background-color: #ffffff;
     @include for-md-phone {
         flex-wrap: nowrap;
-    }
-   
+    }  
 }
+
 
 .container-fluid {
      @include for-md-phone {
@@ -175,3 +193,5 @@
         height: 40px;        
     };
 };
+
+

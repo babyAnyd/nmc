@@ -9,10 +9,23 @@
     @media (max-width: 462px) {
          @content;
     }
-}
+};
 
 @mixin for-xxl-desktop {
     @media (max-width: 1880px) {
          @content;
     }
+};
+
+@mixin for-lg-max-desktop {
+    @media (max-width: 992px) {
+        @content;
+    }
 }
+
+@mixin for-lg-min-desktop {
+    @media (min-width: 992px) {
+        @content;
+    }
+};
+
