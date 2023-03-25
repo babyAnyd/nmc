@@ -1,17 +1,27 @@
-import { Images } from "../Components/ImagesList";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { HomePhotoList } from "../Components/HomePhotos";
+import { HomeSectionOne } from "../PagesSectionStorageList/HomePage";
+
 export const Home = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="container">
       <div className="home">
-        <div className="home_items">
-          <img id="main_pics" src={Images.sec1x1_pics} alt="main_pics" />
-        </div>
-        <div className="home_items mt-lg-6 mt-md-3 mt-5">
-          <img id="main_pics" src={Images.sec1x2_pics} alt="about_img" />
-        </div>
-        <div className="home_items  mt-lg-6 mt-md-3 mt-5">
-          <img id="main_pics" src={Images.sec1x3_pics} alt="event_img" />
-        </div>
+        {HomeSectionOne.map((list, key) => {
+          return (
+            <div
+              className="home_items mt-lg-6 mt-md-5 mt-5"
+              data-aos={list.animate}
+              id={key}
+            >
+              <img id="main_pics" src={list.homePhotoSecOne} alt={list.alt} />
+            </div>
+          );
+        })}
       </div>
       <div className="photo-heading my-lg-6 my-5">
         <h1 className="photo-title">PHOTOS</h1>
@@ -21,48 +31,13 @@ export const Home = () => {
         className="row gy-lg-3 gx-lg-3 gy-lg-3 g-2 row-cols-3  mt-lg-5"
         id="photos_home"
       >
-        <div className="col">
-          <img
-            className="img-fluid"
-            src={Images.sec1x9_pics}
-            alt="sec1x12_pics"
-          />
-        </div>
-        <div className="col">
-          <img
-            className="img-fluid"
-            src={Images.sec1x10_pics}
-            alt="sec1x13_pics"
-          />
-        </div>
-        <div className="col">
-          <img
-            className="img-fluid"
-            src={Images.sec1x11_pics}
-            alt="sec1x10_pics"
-          />
-        </div>
-        <div className="col">
-          <img
-            className="img-fluid"
-            src={Images.sec1x12_pics}
-            alt="sec1x12_pics"
-          />
-        </div>
-        <div className="col">
-          <img
-            className="img-fluid"
-            src={Images.sec1x13_pics}
-            alt="sec1x13_pics"
-          />
-        </div>
-        <div className="col">
-          <img
-            className="img-fluid"
-            src={Images.sec1x14_pics}
-            alt="sec1x10_pics"
-          />
-        </div>
+        {HomePhotoList.map((list, key) => {
+          return (
+            <div className="col" data-aos="zoom-in" id={key}>
+              <img className="img-fluid" src={list.homePhoto} alt={list.alt} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

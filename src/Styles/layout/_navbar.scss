@@ -1,0 +1,70 @@
+.logo {
+    height: 110px;
+    width: 110px;
+    display: block!important;
+    @include for-md-phone {
+        width:100px;
+        height:100px;
+    }
+}
+.container-fluid {
+     @include for-md-phone {
+        position: relative;
+        top: -70px;
+    }
+}
+
+.navbar-nav {
+    background-color: #ffffff;
+    @include for-md-phone {
+        background-color: rgb(240, 244, 244);
+        border-radius: 15px;
+        padding:14px 0!important;
+        position: relative;
+        top: 30px;
+    }
+}
+.navbar-nav .nav-item {
+    text-align: left;
+    @include for-md-phone {
+        padding:10px 20px;
+    }  
+}
+
+.navbar-nav .nav-item:hover {
+   @include for-md-phone {
+     background-color: rgb(237, 237, 233);
+   }
+}
+
+.navbar-collapse {
+    transition: all .4s;
+}
+
+.nav-link {
+    font-family: $nunito;
+    color: $primary_1;
+    font-size: 20px;
+}
+
+#nav-main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    @include for-lg-min-desktop {
+        position: static;
+   }
+   @include for-md-phone {
+        height: 146px;
+   }
+}
+
+.navbar {
+    flex-wrap: wrap!important;
+    background-color: #ffffff;
+    @include for-md-phone {
+        flex-wrap: nowrap;
+    }  
+}

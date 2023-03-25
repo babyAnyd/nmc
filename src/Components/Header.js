@@ -4,7 +4,7 @@ import logo from "../images/logo.jpg";
 export const HeaderMenu = () => {
   return (
     <header>
-      <nav id="nav-main" className="navbar pt-5 pt-lg-5 pt navbar-expand-md">
+      <nav id="nav-main" className="navbar pt-4 pt-lg-5 pt navbar-expand-md ">
         <img className="logo mx-auto" src={logo} alt="logo" />
         <div className="container-fluid mt-lg-4">
           <span></span>
@@ -23,17 +23,19 @@ export const HeaderMenu = () => {
             className="collapse navbar-collapse justify-content-center"
             id="navbarNav"
           >
-            <ul className="navbar-nav">
-              {NavList.map((list) => {
-                return (
-                  <li className="nav-item">
-                    <Link to={list.links} className="nav-link">
-                      {list.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <div id="navbar-ul">
+              <ul className="navbar-nav">
+                {NavList.map((list) => {
+                  return (
+                    <li className="nav-item">
+                      <Link to={list.links} className="nav-link">
+                        {list.title}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
