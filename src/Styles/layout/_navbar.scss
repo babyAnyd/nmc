@@ -17,7 +17,7 @@
 .navbar-nav {
     background-color: #ffffff;
     @include for-md-phone {
-        background-color: rgb(240, 244, 244);
+        background-color: rgb(216, 228, 228);
         border-radius: 15px;
         padding:14px 0!important;
         position: relative;
@@ -33,7 +33,7 @@
 
 .navbar-nav .nav-item:hover {
    @include for-md-phone {
-     background-color: rgb(237, 237, 233);
+     background-color: rgb(190, 190, 181);
    }
 }
 

@@ -4,10 +4,11 @@ import "aos/dist/aos.css";
 import { HomePhotoList } from "../Components/HomePhotos";
 import { HomeSectionOne } from "../PagesSectionStorageList/HomePage";
 
-export const Home = () => {
+export const HomeNav = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
   return (
     <div className="container">
       <div className="home">
@@ -16,7 +17,7 @@ export const Home = () => {
             <div
               className="home_items mt-lg-6 mt-md-5 mt-5"
               data-aos={list.animate}
-              id={key}
+              key={key}
             >
               <img id="main_pics" src={list.homePhotoSecOne} alt={list.alt} />
             </div>

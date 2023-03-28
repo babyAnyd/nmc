@@ -1,7 +1,7 @@
 
 .container{
     max-width: 1800px!important;
-    margin-top: 200px;
+    margin-top: 100px;
     @include for-lg-max-desktop {
         margin-top: 100px;
     }

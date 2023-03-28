@@ -1,6 +1,7 @@
 import { NavList } from "./NavbarList";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.jpg";
+
 export const HeaderMenu = () => {
   return (
     <header>
@@ -25,9 +26,9 @@ export const HeaderMenu = () => {
           >
             <div id="navbar-ul">
               <ul className="navbar-nav">
-                {NavList.map((list) => {
+                {NavList.map((list, key) => {
                   return (
-                    <li className="nav-item">
+                    <li className="nav-item" key={key}>
                       <Link to={list.links} className="nav-link">
                         {list.title}
                       </Link>
@@ -42,40 +43,3 @@ export const HeaderMenu = () => {
     </header>
   );
 };
-
-{
-  /* <nav class="navbar navbar-expand-md fixed-top">
-  <div class="container-fluid mt-lg-4">
-    <a class="navbar-brand" href="#">
-      Brand
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarCollapse"
-      aria-controls="navbarCollapse"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div
-      class="collapse navbar-collapse justify-content-center"
-      id="navbarCollapse"
-    >
-      <ul className="navbar-nav">
-        {NavList.map((list) => {
-          return (
-            <li className="nav-item">
-              <Link to={list.links} className="nav-link">
-                {list.title}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  </div>
-</nav>; */
-}

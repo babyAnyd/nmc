@@ -1,6 +1,6 @@
 import { Images } from "../Components/ImagesList";
 
-export const Members = () => {
+export const MembersNav = () => {
   return (
     <div className="container">
       <div className="row row-cols-1 row-cols-lg-2 row-cols-md-1">

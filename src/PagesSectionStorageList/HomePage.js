@@ -9,11 +9,11 @@ export const HomeSectionOne = [
   {
     homePhotoSecOne: Images.sec1x2_pics,
     alt: "sec1x2_pics",
-    animate: "fade-left",
+    animate: "flip-left",
   },
   {
     homePhotoSecOne: Images.sec1x3_pics,
     alt: "sec1x3_pics",
-    animate: "fade-right",
+    animate: "fade-down",
   },
 ];

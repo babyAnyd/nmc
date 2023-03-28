@@ -1,6 +1,5 @@
-import { Images } from "../Components/ImagesList";
 import { TestimonialList } from "../Components/TestimonialList";
-export const Testimonials = () => {
+export const TestimonialsNav = () => {
   return (
     <div className="container">
       <div
@@ -13,7 +12,7 @@ export const Testimonials = () => {
               <div className="col  " id="testimonial-list">
                 <div className="testimonials rounded-4 p-4 h-100">
                   <div className="img-container">
-                    <img src={list.profImg} />
+                    <img src={list.profImg} alt={list.alt} />
                   </div>
                   <div className="prof-caption ">
                     <h5 className="mt-4 mb-0">{list.name}</h5>

@@ -1,6 +1,6 @@
 import { Images } from "../Components/ImagesList";
 
-export const Photos = () => {
+export const PhotosNav = () => {
   return (
     <div className="container">
       <div className="row g-3 gy-4 ">
